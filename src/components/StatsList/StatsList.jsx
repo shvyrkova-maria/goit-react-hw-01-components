@@ -1,10 +1,14 @@
 // import PropTypes from 'prop-types';
-import Stats from 'components/Stats/Stats';
+import StatsItem from 'components/StatsItem/StatsItem';
 
 function StatsList({ stats }) {
+  let entries = Object.entries(stats);
+
   return (
     <ul>
-      <Stats text={[stats]} />
+      {entries.map(([key, value]) => {
+        return <StatsItem key={[key]} text={[key]} value={[value]} />;
+      })}
     </ul>
   );
 }

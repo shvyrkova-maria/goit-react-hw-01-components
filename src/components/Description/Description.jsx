@@ -1,12 +1,12 @@
 // import PropTypes from 'prop-types';
 import Avatar from 'components/Avatar/Avatar';
 
-function Description({ name, tag, location }) {
+function Description({ name, tag, location, avatar }) {
   return (
     <>
-      <Avatar />
+      <Avatar avatar={avatar} />
       <p>{name}</p>
-      <p>{tag}</p>
+      <p>&#64;{tag}</p>
       <p>{location}</p>
     </>
   );

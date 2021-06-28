@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-function Stats({ text, value }) {
+function StatsItem({ text, value }) {
   return (
     <li>
       <span>{text}</span>
@@ -8,4 +8,4 @@ function Stats({ text, value }) {
   );
 }
 
-export default Stats;
+export default StatsItem;
