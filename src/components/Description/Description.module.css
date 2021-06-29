@@ -1,5 +1,6 @@
 .description {
   text-align: center;
+  padding: 20px;
 }
 
 p:not(:last-of-type) {
@@ -7,6 +8,7 @@ p:not(:last-of-type) {
 }
 
 .name {
+  margin-top: 15px;
   font-weight: 700;
   color: var(--main-color);
 }
@@ -15,4 +17,10 @@ p:not(:last-of-type) {
 .location {
   font-size: 14px;
   color: var(--secondary-color);
+}
+
+.icon {
+  width: 11px;
+  height: 11px;
+  margin-right: 3px;
 }

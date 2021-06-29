@@ -8,7 +8,7 @@ function FriendList({ friends }) {
       {friends.map(({ avatar, name, isOnline, id }) => {
         return (
           <li key={id} className={s.item}>
-            <span className={s.status}></span>
+            <span className={isOnline ? s.online : s.offline}></span>
             <Avatar avatar={avatar} name={name} />
             <p className={s.name}>{name}</p>
           </li>

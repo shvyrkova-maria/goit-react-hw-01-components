@@ -1,0 +1,16 @@
+.stats {
+  width: 300px;
+  background-color: var(--bg-color);
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.list {
+  display: flex;
+}

@@ -3,7 +3,7 @@ import s from 'components/StatsItem/StatsItem.module.css';
 
 function StatsItem({ text, value }) {
   return (
-    <li className={s.statsItem}>
+    <li className={s.item}>
       <span className={s.label}>{text}</span>
       <span className={s.quantity}>{value}</span>
     </li>

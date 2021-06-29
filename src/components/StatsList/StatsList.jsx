@@ -6,7 +6,7 @@ function StatsList({ stats }) {
   let entries = Object.entries(stats);
 
   return (
-    <ul className={s.statList}>
+    <ul className={s.list}>
       {entries.map(([key, value]) => {
         return <StatsItem key={[key]} text={[key]} value={[value]} />;
       })}
