@@ -1,0 +1,18 @@
+.description {
+  text-align: center;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.tag,
+.location {
+  font-size: 14px;
+  color: var(--secondary-color);
+}

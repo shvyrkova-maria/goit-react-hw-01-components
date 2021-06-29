@@ -1,0 +1,11 @@
+.statsItem {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.label {
+  margin-bottom: 7px;
+}
