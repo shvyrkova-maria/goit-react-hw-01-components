@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// import userPlaceholder from 'components/Avatar/user-placeholder.png';
+import userPlaceholder from 'components/Avatar/user-placeholder.png';
 import s from './Avatar.module.css';
 
 function Avatar({ avatar, name }) {
@@ -12,12 +12,12 @@ function Avatar({ avatar, name }) {
   );
 }
 
-// Avatar.defaultProps = {
-//   avatar: userPlaceholder,
-// };
+Avatar.defaultProps = {
+  avatar: userPlaceholder,
+};
 
 Avatar.propTypes = {
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
 

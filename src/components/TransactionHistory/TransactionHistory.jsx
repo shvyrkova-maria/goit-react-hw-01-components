@@ -28,6 +28,7 @@ function TransactionHistory({ items }) {
 }
 
 TransactionHistory.protoTypes = {
+  id: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,

@@ -3,8 +3,6 @@ import StatsItem from 'components/StatsItem/StatsItem';
 import s from 'components/Statistics/Statistics.module.css';
 import { makeRandomColor } from 'utils/randomColor';
 
-// console.log(makeRandomColor());
-
 function Statistics({ title, stats }) {
   return (
     <div className={s.stats}>
@@ -18,6 +16,8 @@ function Statistics({ title, stats }) {
               value={`${percentage}%`}
               style={{
                 backgroundColor: makeRandomColor(),
+                color: 'white',
+                border: `1px solid transporent`,
               }}
             />
           );
@@ -28,11 +28,12 @@ function Statistics({ title, stats }) {
 }
 
 Statistics.protoTypes = {
-  title: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired, //??? shape???
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string,
+    }),
+  ),
 };
 
 export default Statistics;
-
-// console.log((backgroundColor:makeRandomColor()));

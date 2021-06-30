@@ -10,7 +10,7 @@ import transactions from 'data/transactions.json';
 
 function App() {
   return (
-    <div>
+    <>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -22,7 +22,7 @@ function App() {
       {/* <Statistics stats={statisticalData} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 .stats {
   width: 300px;
   background-color: var(--bg-color);
+  margin-bottom: 15px;
 }
 
 .title {

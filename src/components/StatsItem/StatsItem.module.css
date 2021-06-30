@@ -4,16 +4,24 @@
   align-items: center;
   width: 100%;
   padding: 7px;
-  /* background-color: var(--primary-color); */
-  border: 1px solid var(--main-bg-color);
+  border-bottom: none;
+}
+
+.item:first-child {
+  border-left: none;
+}
+
+.item:last-child {
+  border-right: none;
 }
 
 .label {
   font-size: 9px;
   text-transform: capitalize;
-  color: var(--secondary-color);
+
   margin-bottom: 5px;
 }
+
 .quantity {
   font-size: 12px;
   font-weight: 700;

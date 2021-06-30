@@ -1,8 +1,8 @@
-// import PropTypes from 'prop-types';??
+import PropTypes from 'prop-types';
 import StatsItem from 'components/StatsItem/StatsItem';
-import s from 'components/StatsList/StatsList.module.css';
+import s from 'components/ProfileStatsList/ProfileStatsList.module.css';
 
-function StatsList({ stats }) {
+function ProfileStatsList({ stats }) {
   let entries = Object.entries(stats);
 
   return (
@@ -14,4 +14,8 @@ function StatsList({ stats }) {
   );
 }
 
-export default StatsList;
+ProfileStatsList.propTypes = {
+  stats: PropTypes.object.isRequired,
+};
+
+export default ProfileStatsList;
